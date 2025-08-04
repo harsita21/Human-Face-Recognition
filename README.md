@@ -11,6 +11,8 @@ File	Purpose
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | `collect_data.py`             | Collects 100 face images per person using mobile camera via IP Webcam. Images are manually cleaned for quality.  |
 | `consolidate_data.py`         | Preprocesses and compresses face images, converts them to grayscale, and pickles the data (`images.p`, `labels.p`). |
+| `Face_Recognition_Harsita.ipynb`     | Google Colab notebook for model training: loads pickled data, preprocesses it, builds and trains a custom CNN, and saves the final model. |
+
 | `haarcascade_frontalface_default.xml` | Pre-trained Haarcascade file used for face detection in both data collection and real-time recognition.     |
 | `recognize.py`                | Loads the final trained model and applies it to real-time video feed for live face recognition using OpenCV.     |
 
